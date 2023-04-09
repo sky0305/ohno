@@ -126,7 +126,7 @@ rule = '''題目中所呈現的數字代表
 遇到X或是邊界前的
 數字與O的總合(不含本身)
 請以 "列 行 O/X" 的格式回答每一步的更動
-例如："1 1 X" or "3 4 O"
+例如："1 1 X" 或 "3 4 O"
 基本上每題僅有唯一解
 祝您玩得愉快\n'''
 
@@ -176,7 +176,7 @@ while player_matrix != check_matrix:
     while True:
         # print(len(for_undo_restart))
         showout(player_matrix)
-        print('PLease enter your reply in the format like "row column O/X", e.g., "1 1 X" or "3 4 O". ')
+        print('Please enter your reply in the format like "row column O/X", e.g., "1 1 X" or "3 4 O". ')
         print('Or enter "U" or "undo" to undo your last step, "restart" to restart this game. ')
         reply = input("What is your next step: ").strip().split()
         os.system("cls")
