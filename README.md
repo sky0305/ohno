@@ -12,8 +12,10 @@
 - undo
 - restart
 - timer
-- easy(hint) mode
+- easy mode 
 - two ways to show matrix
+- medium mode(part 1)
+- medium mode(part 2)
 
 目前尚未想出來的功能：
 - 為提示加上解說
