@@ -1,5 +1,7 @@
 # ohno
 
+<img src="https://play-lh.googleusercontent.com/gVwGjj0pto-qwm034ZcPYwPQ5_byZ3facahoMYT-Rt_qPX2Vt6IZOOPZhFjQALoQU-Sj=w480-h960-rw" width="200px" />
+
 這個project是我以python仿作 荷蘭工作室 **Q42** 所設計的遊戲 - [0h n0](https://play.google.com/store/apps/details?id=com.q42.ohno&hl=zh_TW&gl=US)。
 
 因為嘗試過這個遊戲後覺得非常有趣，在自己摸索出解題邏輯後，開始思考出題規則，同時練習python的日常運用。  
