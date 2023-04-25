@@ -9,6 +9,7 @@
 
 若有任何指教，還請各位不吝提出。
 
+
 目前完成功能：
 - 自動出題
 - normal(hard) mode
@@ -21,6 +22,7 @@
 - medium mode - not enough
 - medium mode - adjust the answer dynamically
 - hard mode - adjust the answer dynamically
+
 
 目前尚未想出來的功能：
 - 為提示加上解說
