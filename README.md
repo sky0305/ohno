@@ -11,14 +11,17 @@
 
 目前完成功能：
 - 自動出題
+- normal(hard) mode
 - undo
 - restart
 - timer
 - easy mode 
 - two ways to show matrix
-- medium mode(part 1)
-- medium mode(part 2)
+- medium mode - over
+- medium mode - not enough
+- medium mode - adjust the answer dynamically
+- hard mode - adjust the answer dynamically
 
 目前尚未想出來的功能：
 - 為提示加上解說
-- 確保每個題目挖完空格後，邏輯上僅有唯一解
+- 確保每個題目挖完空格後，邏輯上僅有唯一解 - adjust the answer dynamically - OK
