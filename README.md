@@ -24,4 +24,4 @@
 
 目前尚未想出來的功能：
 - 為提示加上解說
-- 確保每個題目挖完空格後，邏輯上僅有唯一解 - adjust the answer dynamically - OK
+- 確保每個題目挖完空格後，邏輯上僅有唯一解 - adjust the answer dynamically - 50% OK
