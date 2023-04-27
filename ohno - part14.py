@@ -275,20 +275,53 @@ def medium_hard_mode(player_matrix, hardmode = 0):
                     break
         if not_enough_check == 1:
             break
+    
+    alone_O = 0
+    for y in range(len(player_matrix)):
+        for x in range(len(player_matrix[0])):
+            if player_matrix[y][x] == "O":
+                # alone_O_count = 0
+                # if y == 0 or (y != 0 and player_matrix[y - 1][x] == "X"):
+                #     alone_O_count += 1
+                # else:
+                #     break
 
-    # full_filled = 0
-    # if not_enough_check == 0 and over_check == 0:
-    #     for y in range(len(player_matrix)):
-    #         for x in range(len(player_matrix[0])):
-    #             if player_matrix[y][x] == " ":
-    #                 print("space")
-    #                 break
-    #             elif y == len(player_matrix) and x == len(player_matrix):
-    #                 full_filled = 1
-    # 邏輯錯誤
+                # if y == len(player_matrix) - 1 or (y != len(player_matrix) - 1 and player_matrix[y + 1][x] == "X"):
+                #     alone_O_count += 1
+                # else:
+                #     break
+
+                # if x == 0 or (x != 0 and player_matrix[y][x - 1] == "X"):
+                #     alone_O_count += 1
+                # else:
+                #     break
+
+                # if x == len(player_matrix[0]) - 1 or (x != len(player_matrix[0]) - 1 and player_matrix[y][x + 1] == "X"):
+                #     alone_O_count += 1
+                # else:
+                #     break
+
+                if y != 0 and player_matrix[y - 1][x] != "X":
+                    break
+
+                if y != len(player_matrix) - 1 and player_matrix[y + 1][x] != "X":
+                    break
+
+                if x != 0 and player_matrix[y][x - 1] != "X":
+                    break
+
+                if x != len(player_matrix[0]) - 1 and player_matrix[y][x + 1] != "X":
+                    break
+            
+                # if alone_O_count == 4:
+                alone_O = 1
+
+        if alone_O == 1:
+            # print("I'm alone.")
+            break
 
     full_filled = 0
-    if not_enough_check == over_check == 0:
+    if not_enough_check == over_check == 0 and alone_O == 0:
         full_filled = 1
         for y in range(len(player_matrix)):
             for x in range(len(player_matrix[0])):
@@ -299,12 +332,13 @@ def medium_hard_mode(player_matrix, hardmode = 0):
                 break
 
     if full_filled == 1:
-        # print("matrix full")
-        # 當一個空格被4個X包圍時填O，遊戲也會結束
         new_answer_matrix, new_loop_times = generate_answer_matrix(player_matrix)
         return new_answer_matrix
     
     if hardmode == 0:
+        if alone_O == 1:
+            print("There is/are certain O(s) feel alone, please change it/them to X(s).\n")
+
         if over_check == 1 and not_enough_check == 1:
             print("?    !\n")
         elif over_check == 1:
