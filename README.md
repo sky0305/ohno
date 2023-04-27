@@ -20,6 +20,7 @@
 - two ways to show matrix
 - medium mode - over
 - medium mode - not enough
+- combine two display modes into one exe
 - medium mode - adjust the answer dynamically
 - hard mode - adjust the answer dynamically
 
