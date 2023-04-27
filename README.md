@@ -23,9 +23,9 @@
 - combine two display modes into one exe
 - medium mode - adjust the answer dynamically
 - hard mode - adjust the answer dynamically
+- fix "one O surrounds by 4 X or boundary still end the game" problem
 
 
 目前尚未想出來的功能：
 - 為提示加上解說
 - 確保題目挖完空格後，每個空格在邏輯上僅有唯一解
-- 當有單純一個O被4個x或邊界包圍時也會結束遊戲
